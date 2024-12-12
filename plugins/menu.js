@@ -74,7 +74,7 @@ System({
         }
         menu += `\n┃  ╰─────────────···▸`;
     }
-    menu += ` ╰━━━━━━━━━━━┈⊷\nmade with 🤍`;
+    menu += ` ╰━━━━━━━━━━━┈⊷\n 𝙓𝙞𝙖 𝙇𝙪𝙘𝙞 ⚠︎`;
     const url = BOT_INFO.split(';')[2];
     if (isUrl(url)) await message.sendFromUrl(url, { caption: menu });
     else await message.send(menu);
@@ -99,7 +99,7 @@ System({
     });
     if (MEDIA_DATA) {
         const [title, body, thumbnail] = MEDIA_DATA.split(";");
-        await message.client.sendMessage(message.jid, { text: menu, contextInfo: { externalAdReply: { title, body, thumbnailUrl: thumbnail, renderLargerThumbnail: true, mediaType: 1, mediaUrl: '', sourceUrl: "https://github.com/Loki-Xer/Jarvis-md", showAdAttribution: true } } });
+        await message.client.sendMessage(message.jid, { text: menu, contextInfo: { externalAdReply: { title, body, thumbnailUrl: thumbnail, renderLargerThumbnail: true, mediaType: 1, mediaUrl: '', sourceUrl: "https://whatsapp.com/channel/0029VavsgEPIN9ip5yARyH3D", showAdAttribution: true } } });
     } else {
         await message.send(menu);
     }
